@@ -1,0 +1,215 @@
+---
+title: "Perception of lexical pitch accent in South Kyungsang Korean"
+subtitle: Final project for ds4ling
+author: "Hyunjung Joo"
+institute: "Rutgers University"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["rutgers-fonts", "rutgers"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+
+---
+```{css, echo=FALSE, warning=FALSE, message=FALSE}
+.remark-slide-content {
+  font-size: 25px;
+}
+```
+
+# 1. Overview
+<br>
+### This study investigates how South Kyungsang Korean listeners perceive lexical pitch accents, H vs. LH, by looking at different theoretical approaches to the phonological representation of intonational contour (f0).
+
+- **Autosegmental-metrical (AM)** approach: intonational contour can be defined in terms of f0 turning points such as H or L. 
+
+- **Tonal Center of Gravity (TCoG)** approach: not only f0 turning points but also rising shape is important.
+
+---
+# 2. South Kyungsang Korean
+<br>
+- A lexical pitch accent language (e.g., Kenstowicz & Sohn 1997, Kim & Jun 2009)
+
+- Tonal patterns of some words are defined lexically, while other tonal patterns are specified post-lexically.
+
+```{r,  fig.align='center', out.width = "45%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture10.png") 
+```
+---
+# 2. South Kyungsang Korean
+<br>
+```{r,  fig.align='center', out.width = "90%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture1.png") 
+```
+---
+class: middle, center
+# How do South Kyungsang Korean listeners perceive the lexical pitch accent, H vs. LH?
+*Is it the f0 peak or the rising shape?*
+---
+class: middle, center
+# Experiment
+---
+# 3. Methods
+## Materials
+- **Target words**: three monosyllabic homophone pairs
+
+```{r,  fig.align='center', out.width = "40%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture2.png") 
+```
+
+- The target words are embedded in a carrier sentence: H+L  target word L 
+---
+# 3. Methods
+## Materials
+- **Filler words**: differ in either onset or coda from the target words 
+
+```{r,  fig.align='center', out.width = "90%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture3.png") 
+```
+---
+# 3. Methods
+## Materials
+- Recordings from a female South Kyungsang Speaker
+
+```{r,  fig.align='center', out.width = "60%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture4.png") 
+```
+---
+# 3. Methods
+## Factor 1: f0 peak alignment
+```{r,  fig.align='center', out.width = "60%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture5.png") 
+```
+---
+# 3. Methods
+## Factor 2: f0 rise shape
+```{r,  fig.align='center', out.width = "60%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture6.png") 
+```
+---
+# 3. Methods
+## Two-alternative forced choice experiment
+- **Participants**: 
+
+    22 South Kyungsang listeners (11F, 11M)
+    
+- **Procedure**:
+
+    120 target words (2 factors (5 peak alignments + 5 rise shapes) x 3 items (/kan/, /pal/, /pam) x 4 repetitions) + 180 filler words = 300
+    
+    4 blocks in a randomized order using Psychopy
+
+    Heard stimuli using a headphone (Sony MDR-7509)
+---
+class: middle, center
+```{r,  fig.align='center', out.width = "75%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/picture7.png") 
+```
+---
+# 4. Statistical analysis
+## Mixed-effects logistic regression models
+### Peak alignment
+- **Dependent variable**: 
+
+    *responses* (H coded as 1 vs. LH coded as 0) 
+
+- **Fixed effects** as continuous variables: 
+    
+    *continuum steps* (5 steps from earlier to later peaks)
+    
+    Random slope and intercept for *Subject* and *Item*.  
+---
+# 4. Statistical analysis
+## Mixed-effects logistic regression models
+### Rise shape
+- **Dependent variable**: 
+
+    *responses* (H coded as 1 vs. LH coded as 0) 
+
+- **Fixed effects** as continuous variables: 
+    
+    *continuum steps* (5 steps from concave to convex shapes)
+    
+    Random intercepts for *Subject* and *Item*
+---
+# 5. Results: f0 peak alignment
+.pull-left[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot5.png") 
+```
+]
+.pull-right[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot3.png") 
+```
+    
+  In the model, the *Continuum steps* for *Peak alignment* did not show any statistical significance (b = -0.09, z = -0.89, p <.001). That is, regardless of the timing of f0 peak, the listeners responded to all steps in the continuum as LH.
+    
+  The H response percentage for all the *Continuum steps* was below chance level (mean = 0.16, sd = 0.37).  
+    
+
+]
+---
+# 5. Results: f0 peak alignment
+.pull-left[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot5.png") 
+```
+]
+.pull-right[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot3.png") 
+```
+<BR>
+    **&rarr; SKK listeners did not differentiate H vs. LH depending on f0 peak alignment.**
+    
+    
+
+]
+---
+# 5. Results: f0 rise shape
+.pull-left[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot7.png") 
+```
+]
+.pull-right[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot4.png") 
+```
+
+  The H response percentage gradually increased from Step 1 to Step 5, which found to be significant in the model (b = 0.68, z = -7.61, p <.001). 
+    
+  The parameter estimates of the model indicated that a one unit increase in the *Continuum step* for *Rise shape* yielded a change in the log odds of selecting H tone by 0.68, with a positive difference of 33% in the probability of selecting H tone.
+]
+---
+# 5. Results: f0 rise shape
+.pull-left[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot7.png") 
+```
+]
+.pull-right[
+```{r,  fig.align='center', out.width = "100%", echo=FALSE, warning=FALSE, message=FALSE}
+knitr::include_graphics("C:/Users/joohj/OneDrive/바탕 화면/final presentation/images/Rplot4.png") 
+```
+<br>
+    **&rarr; SKK listeners categorically perceived H vs. LH depending on Rise shape, more concave as LH and more convex as H.**
+]
+---
+# 6. Conclusion
+
+<br>
+- f0 rise shape was found to be an important cue for SKK listeners to distinguish lexical pitch accents, H vs. LH, while f0 peak alignment did not show such effect.
+
+- This shows that rising shape really matters in the perception of lexical pitch accent!
+
+- These results support the TCoG approach rather than the AM theory.
+
+---
+class: middle, center
+# Thank you!
